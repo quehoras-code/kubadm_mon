@@ -1,0 +1,15 @@
+[masters]
+%{ for i in k8s_masters ~}
+${i.name}    ansible_host=${i.network_interface[0].nat_ip_address}
+%{ endfor ~}
+
+[workers]
+%{ for i in k8s_workers ~}
+${i.name}    ansible_host=${i.network_interface[0].nat_ip_address}
+%{ endfor ~}
+
+[prometheus]
+${prometheus_node.name}    ansible_host=${prometheus_node.network_interface[0].nat_ip_address}
+
+[grafana]
+${grafana_node.name}    ansible_host=${grafana_node.network_interface[0].nat_ip_address}

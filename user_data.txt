@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: quehoras
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh_authorized_keys: 
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7QKoidEla/0RIK+2Viv5Xewm/7+AJ5VSYkfeNf3fGfNwZZKUOC65qP4pkgZMITP9dLw1uiGYelZDmJa8xqLe9ZNIIn6pu7ouUTq/xEhK2N5vmTJsv6Qd0vNV/fdKw2S2aPTUY4aG+2Lm/NVwcQR1sUdZQERQl1vxd3cPo8yBQjJoDEaQkDeeoNkxnFAzHlmOHdr6UNbucCid8+K5iMB+EnV+nDgHNJIo6mr3vVw5ozoCmvtx9fv2YingRbEi9oTD6ds7RcuQwUypCk4yodhCXzyEqrp6FDxcwIkh6ZZiIH2BWPoS0Zvt+K8wY22zmGor7GfyCFZG+GN/qbLD/UtUD0RgZkU+UNRgostYckbVFfQt9Y5T2FMmZyRPj5KPoYP0vzLmfoKjwLKM7ZN0Q5NHmvnmbDlKGdPgbDPw6nnk7YSgSHSzUs3vDmQ454zZ3O9ppLjnPjTyU44UxLEMDECvbBXh/9bS5EPRGQMGYRulCYsnMLyjdwBB5jpXm/LF9wBc= quehoras@quehoras-Lenovo-ideapad-320-15ISK
