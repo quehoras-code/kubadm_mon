@@ -1,6 +1,6 @@
 resource "yandex_compute_instance" "grafana_node" {
-    name = "grafana-node"
-    hostname = "grafana-node"
+    name = "grafana"
+    hostname = "grafana"
     platform_id = "standard-v1"
     resources {
         cores = 2
