@@ -2,9 +2,9 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/local" {
-  version = "2.5.3"
+  version = "2.6.1"
   hashes = [
-    "h1:1Nkh16jQJMp0EuDmvP/96f5Unnir0z12WyDuoR6HjMo=",
+    "h1:LMoX85QLTgCCqRuy2aXoz47P7gZ4WRPSA00fUPC/Rho=",
   ]
 }
 
@@ -16,8 +16,9 @@ provider "registry.terraform.io/hashicorp/null" {
 }
 
 provider "registry.terraform.io/yandex-cloud/yandex" {
-  version = "0.169.0"
+  version     = "0.171.0"
+  constraints = ">= 0.70.0"
   hashes = [
-    "h1:jC+VcJDroCbfErpIgG7Ltgl8v8aLUgKB9i1ftCFiMYo=",
+    "h1:3YW+kIYozFOy2vl8J2+/atxALxS034E6G+yGb1l8oXU=",
   ]
 }
